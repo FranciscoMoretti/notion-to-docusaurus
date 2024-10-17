@@ -1,0 +1,26 @@
+{
+  "rootId": "11a047149aef80578303e705001bb90e",
+  "rootObjectType": "database",
+  "rootDbAsFolder": true,
+  "cache": {
+    "cacheDirectory": "./.downloader",
+    "cleanCache": false,
+    "cacheStrategy": "cache",
+    "cacheAssets": true
+  },
+  "conversion": {
+    "skip": false,
+    "overwrite": false,
+    "markdownExtension": "md",
+    "filters": [],
+    "pageLinkHasExtension": false,
+    "outputPaths": "./docs",
+    "markdownPrefixes": "",
+    "layoutStrategy": "hierarchical",
+    "namingStrategy": {
+      "markdown": "notionSlug",
+      "assets": "default"
+    },
+    "plugins": []
+  }
+}
