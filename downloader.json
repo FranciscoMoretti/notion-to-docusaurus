@@ -1,5 +1,5 @@
 {
-  "rootId": "11a047149aef80578303e705001bb90e",
+  "rootId": "123047149aef80dea405cf2b23810bb7",
   "rootObjectType": "database",
   "rootDbAsFolder": true,
   "cache": {
@@ -11,16 +11,28 @@
   "conversion": {
     "skip": false,
     "overwrite": false,
-    "markdownExtension": "md",
+    "markdownExtension": "mdx",
     "filters": [],
     "pageLinkHasExtension": false,
-    "outputPaths": "./docs",
-    "markdownPrefixes": "",
-    "layoutStrategy": "hierarchical",
-    "namingStrategy": {
-      "markdown": "notionSlug",
-      "assets": "default"
+    "outputPaths": {
+      "markdown": "./docs",
+      "assets": "./static"
     },
-    "plugins": []
+    "markdownPrefixes": {
+      "markdown": "/docs",
+      "assets": ""
+    },
+    "layoutStrategy": {
+      "markdown": "hierarchical",
+      "assets": "flat"
+    },
+    "namingStrategy": {
+      "markdown": "githubSlug",
+      "assets": "guid"
+    },
+    "frontmatter": {
+      "emptyFieldStrategy": "skip"
+    },
+    "plugins": ["standardCalloutTransformer", "standardVideoTransformer"]
   }
 }
